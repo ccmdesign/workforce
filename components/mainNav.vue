@@ -1,8 +1,8 @@
 <template>
   <top-nav class="main-nav" :menu-data="menuData" :neg="neg">
     <template #logo>
-      <img v-if="neg" src="images/logo-white.svg" alt="">
-      <img v-else src="images/logo.svg" alt="">
+      <img v-if="neg" src="/images/logo-white.svg" alt="">
+      <img v-else src="/images/logo.svg" alt="">
     </template>
   </top-nav>
 </template>
