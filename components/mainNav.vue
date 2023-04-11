@@ -14,16 +14,20 @@ import { toRefs } from 'vue'
 const props = defineProps({
   neg: {
     type: Boolean,
-    default: false
+    default: true
   },
 });
 
-const { logoNeg } = toRefs(props)
+const { neg } = toRefs(props)
 
 const menuData = [
   {
+    label: 'Intro',
+    url: '/'
+  },
+  {
     label: 'Resources',
-    url: '/#resources'
+    url: '/resources'
   },
   {
     label: 'Playbook',

@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     '@ccmdesign/ccm-ds/assets/css/03-objects/polarized.css',
     '@ccmdesign/ccm-ds/assets/css/03-objects/stack.css',
     '@ccmdesign/ccm-ds/assets/css/03-objects/switcher.css',
+    'assets/css/global.scss',
   ],
   components: {
     "dirs": [
@@ -48,5 +49,9 @@ export default defineNuxtConfig({
       },
       "~/components"
     ]
+  },
+
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
 });

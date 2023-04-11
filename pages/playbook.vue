@@ -1,16 +1,10 @@
 <template>
-  <article class="page">
-    <main-nav />
-    <center-l size="wide">
-      <header class="text-align:center padding-block:s3">
-        <a class="breadcrumb" href="/#resources">Resources</a>
-        <h2 class="color:secondary">College-to-Jobs Playbook</h2>
-      </header>
-      <div class="panels">
-        <div class="panel image">
-          <img src="" alt="">
+    <section class="grid-section resources" id="resources">
+      <div class="resources-content">
+        <div class="panel heading">
+          <nuxtLink class="breadcrumbs" to="resources">Resources</nuxtLink>
+          <h2 class="color:secondary">College-to-Jobs Playbook</h2>
         </div>
-
         <div class="panel content">
           <stack-l>
             <p><strong>For a growing share of learners and workers in the United States, college is failing to live up to its economic mobility promise.</strong> The cost of college is rising, accompanied by mounting student debt, and many graduates are underemployed following college. Students face steep barriers to college enrollment and success, including time demands, access to housing and childcare, and transportation. These conditions have prompted many learners and workers to reconsider whether college is truly worth the expense.</p>
@@ -21,8 +15,7 @@
           </stack-l>
         </div>
       </div>
-    </center-l>
-  </article>
+    </section> 
 </template>
 
 <script setup>
@@ -30,30 +23,11 @@
 </script>
 
 <style lang="scss" scoped>
-.page {
-  padding-top: var(--s3);
-  h2 {
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-  }
-
-  .breadcrumb {
-    color: hsla(var(--black-hsl), 1);
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    opacity: .4;
-    text-decoration: none;
-  }
+.resources { 
+  background-image: url('public/images/intro-3.jpg'); 
+}
+.panel {
+  grid-area: right;
 }
 
-.panels {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.panel { flex: 1 1 350px; }
-.content { flex-grow: 2;}
 </style>
