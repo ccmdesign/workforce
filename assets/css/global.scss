@@ -98,7 +98,6 @@
   left: -80px;
 }
 
-
 .resources-content {
   grid-area: right;
   align-self: center;
@@ -108,15 +107,17 @@
 .panel {
   margin-top: var(--s1);
   padding: var(--s2);
-  background-color: hsla(var(--white-hsl), .85);
+  background-color: hsla(var(--white-hsl), 1);
+  box-shadow: 6px 6px 16px rgba(0,0,0, .2);
 }
 
 .heading {
-  background-color: hsla(var(--white-hsl), .85);
+  background-color: hsla(var(--white-hsl), 1);
   display: inline-block;
   padding: var(--s0) var(--s2);
   position: relative;
   z-index: 10;
+  box-shadow: 6px 6px 16px rgba(0,0,0, .2);
 }
 
 .breadcrumbs {
@@ -126,7 +127,6 @@
   text-transform: uppercase;
 }
 
-
 section {
   height: 100%;
   background-repeat: no-repeat;
@@ -161,18 +161,6 @@ section {
   display: flex;
   width: 400vw;
   height: 100%;
-}
-
-
-
-#intro-1 .intro-section__content { position: relative; }
-
-.background-container {
-  position: absolute;
-  z-index: -1;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
 }
 
 #intro-1 .intro-section__content { position: relative; }
@@ -185,60 +173,4 @@ section {
 
 .intro-section__content {
   box-shadow: 6px 6px 16px rgba(0,0,0, .2);
-}
-
-.background-container {
-  position: absolute;
-  z-index: -1;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: opacity 1s;
-  animation-name: scale;
-  animation-duration: 40s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-
-.bg-1 { background-image: url('/images/intro-1.jpg'); }
-.bg-2 { background-image: url('/images/intro-2.jpg'); }
-.bg-3 { background-image: url('/images/intro-3.jpg'); }
-
-.background-container[bg='1'] {
-  .bg-1 { opacity: 1; }
-  .bg-2 { opacity: 0; }
-  .bg-3 { opacity: 0; }
-}
-.background-container[bg='2'] {
-  .bg-1 { opacity: 0; }
-  .bg-2 { opacity: 1; }
-  .bg-3 { opacity: 0; }
-}
-.background-container[bg='3'] {
-  .bg-1 { opacity: 0; }
-  .bg-2 { opacity: 0; }
-  .bg-3 { opacity: 1; }
-}
-
-
-@keyframes scale {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.5);
-  }
 }

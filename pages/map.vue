@@ -3,7 +3,7 @@
     <div class="resources-content">
       <div class="panel heading">
         <nuxtLink class="breadcrumbs" to="resources">Resources</nuxtLink>
-        <h2 class="color:secondary">College-to-Jobs Map</h2>
+        
       </div>
       <div class="panel content">
         <stack-l>

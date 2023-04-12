@@ -5,8 +5,8 @@
     <nav>
       <li><a href="/">Intro</a></li>
       <li><a href="#resources">Resources</a></li>
-      <li><a href="#playbook">Playbook</a></li>
-      <li><a href="#map">Map</a></li>
+      <li><a href="#playbook" @click="changeSlide('playbook')">Playbook</a></li>
+      <li><a href="#map" @click="changeSlide('map')">Map</a></li>
     </nav>
 
       
