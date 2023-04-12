@@ -28,7 +28,7 @@
 
 <style lang="scss" scoped>
 
-.resources { 
+.grid-section { 
   background-image: url('/images/intro-3.jpg'); 
 }
 

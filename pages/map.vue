@@ -20,7 +20,7 @@
 </script>
 
 <style lang="scss" scoped>
-.resources { 
+.grid-section { 
   background-image: url('public/images/intro-3.jpg'); 
 }
 </style>

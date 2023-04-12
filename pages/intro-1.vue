@@ -19,5 +19,5 @@
 </script>
 
 <style lang="scss" scoped>
-.intro-1 { background-image: url('/images/intro-1.jpg'); }
+.grid-section { background-image: url('/images/intro-1.jpg'); }
 </style>

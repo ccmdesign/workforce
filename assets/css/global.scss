@@ -60,15 +60,15 @@ body > * {
   position: absolute;
   bottom: 0;
   border-bottom: 2px dashed hsla(var(--white-hsl), .5);
-  width: 2000px;
+  width: 3000px;
 }
 
 .intro-section__content:before { 
-  left: -2000px; 
+  left: -3000px; 
   right: 0;
 }
 .intro-section__content:after { 
-  right: -2000px; 
+  right: -3000px; 
   left: 0;
 }
 
@@ -129,28 +129,3 @@ body > * {
   text-transform: uppercase;
 }
 
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-
-
-// Transitions
-.move-enter-active,
-.move-leave-active {
-  transition: all 5s ease;
-}
-
-.move-enter-from {
-  transform: translateX(50vw);
-}
-
-.move-leave-to {
-  transform: translateX(-50vw);
-  
-}
