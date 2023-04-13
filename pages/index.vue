@@ -155,11 +155,16 @@ section {
 
 .intro-section__content {
   box-shadow: 6px 6px 16px rgba(0,0,0, .2);
+  z-index: 10;
+}
+
+.intro-section__content {
+  max-width: 50%;
+  margin-bottom: 20vh;
 }
 
 #playbook .intro-section__content {
-  align-self: center;
-  max-width: 75%;
-  margin-bottom: 14vh;
+  max-width: 100%;
+  transform: translateX(-20%);
 }
 </style>

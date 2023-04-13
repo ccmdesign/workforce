@@ -51,7 +51,7 @@ const { bg } = toRefs(props)
 .bg-1 { background-image: url('/images/intro-1.jpg'); }
 .bg-2 { background-image: url('/images/intro-2.jpg'); }
 .bg-3 { background-image: url('/images/intro-3.jpg'); }
-.bg-4 { background-image: url('/images/playbook.jpg'); }
+.bg-4 { background-image: url('/images/playbook.png'); }
 .bg-5 { background-image: url('/images/map.jpg'); }
 
 .background-container[bg='1'] {
