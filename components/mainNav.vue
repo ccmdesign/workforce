@@ -3,10 +3,10 @@
     <a class="logo" href="/"><img src="/images/logo-white.svg" alt="Project on Workforce Logo"></a>
 
     <nav>
-      <li><a href="/">Intro</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#playbook" @click="changeSlide('playbook')">Playbook</a></li>
-      <li><a href="#map" @click="changeSlide('map')">Map</a></li>
+      <li><a href="/" @click="openResource('intro-1')">Intro</a></li>
+      <li><a href="#resources" @click="openResource('resources')">Resources</a></li>
+      <li><a href="#playbook" @click="openResource('playbook')">Playbook</a></li>
+      <li><a href="#map" @click="openResource('map')">Map</a></li>
     </nav>
 
       
@@ -14,8 +14,14 @@
 </template>
 
 <script setup>
-
 import { toRefs } from 'vue'
+
+const stateActiveSlide = useActiveSlide()
+
+const openResource = (rsc) => {
+  stateActiveSlide.value = rsc
+}
+
 
 const props = defineProps({
   neg: {

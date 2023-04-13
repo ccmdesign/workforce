@@ -3,6 +3,8 @@
     <div class="bg bg-1"></div>
     <div class="bg bg-2"></div>
     <div class="bg bg-3"></div>
+    <div class="bg bg-4"></div>
+    <div class="bg bg-5"></div>
   </div>
 </template>
 
@@ -11,7 +13,7 @@ import { toRefs } from 'vue'
 
 const props = defineProps({
   bg: {
-    type: String,
+    type: Number,
     default: ''
   },
 });
@@ -74,7 +76,7 @@ const { bg } = toRefs(props)
   .bg-5 { opacity: 0; }
 }
 
-.background-container[bg='playbook'] {
+.background-container[bg='4'] {
   .bg-1 { opacity: 0; }
   .bg-2 { opacity: 0; }
   .bg-3 { opacity: 0; }
@@ -82,7 +84,7 @@ const { bg } = toRefs(props)
   .bg-5 { opacity: 0; }
 }
 
-.background-container[bg='map'] {
+.background-container[bg='5'] {
   .bg-1 { opacity: 0; }
   .bg-2 { opacity: 0; }
   .bg-3 { opacity: 0; }

@@ -1,6 +1,6 @@
 <template>
   <article>
-    <main-nav class="main-nav" neg="true" />
+    <main-nav class="main-nav" :neg=true />
     <main class="main">
       <NuxtPage />
     </main>
