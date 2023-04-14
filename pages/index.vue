@@ -166,7 +166,8 @@ section {
   }
 }
 
-#playbook {
+#playbook,
+#resources {
   .intro-section__content {
     max-width: 100%;
     @media (min-width: 40em) { transform: translateX(-20%); }
