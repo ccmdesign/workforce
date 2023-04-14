@@ -1,7 +1,5 @@
 <template>
   <header class="main-nav" :neg="neg">
-    <a class="logo" href="/"><img src="/images/logo-white.svg" alt="Project on Workforce Logo"></a>
-
     <nav>
       <li><a href="/" @click="openResource('intro-1')">Intro</a></li>
       <li><a href="#resources" @click="openResource('resources')">Resources</a></li>
@@ -61,27 +59,21 @@ const menuData = [
   z-index: 1000;
   padding: var(--s2);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-}
-
-.logo {
-  @media (max-width: 32em) {
-    margin-inline: auto;
-  }
 }
 
 nav {
   display: flex;
+  gap: var(--s1);
 
-  @media (max-width: 32em) {
-    margin-top: var(--s0);
-    width: 100%;
-    flex-direction: column;
+  @media (max-width: 40em) {
+    gap: var(--s0);
     align-items: center;
   }
 }
 
+li { list-style: none; }
 
 li a {
   font-weight: 600;

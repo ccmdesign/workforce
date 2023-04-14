@@ -39,8 +39,9 @@ const { bg } = toRefs(props)
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center left;
   transition: opacity 1s;
+  transform-origin: left;
   animation-name: scale;
   animation-duration: 40s;
   animation-timing-function: linear;
