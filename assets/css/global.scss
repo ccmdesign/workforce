@@ -149,6 +149,7 @@ section {
   display: flex;
   width: 400vw;
   height: 100%;
+  @media (max-width: 40em) { width: 300vw; }
 }
 
 #intro-1 .intro-section__content { position: relative; }
