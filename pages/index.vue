@@ -132,7 +132,10 @@ section {
 
 .slides {
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: scroll;
+  @media (max-width: 40em) {
+    overflow-x: hidden;
+  }
   scroll-behavior: smooth;
   height: 100%;
 }
@@ -163,14 +166,14 @@ section {
   max-width: 95%;
   margin-bottom: 10vh;
 
-  @media (min-width: 32em) {
+  @media (min-width: 40em) {
     max-width: 75%;
     margin-bottom: 10vh;
   }
 }
 
 #map {
-  @media (max-width: 32em) {
+  @media (max-width: 40em) {
     .intro-section__content > .scroll {
       max-height: 50vh;
       overflow-y: scroll;
