@@ -187,7 +187,7 @@ section {
     @media (min-width: 40em) { transform: translateX(-20%); }
   }
   .intro-section__content > .scroll {
-    max-height: 50vh;
+    max-height: 40vh;
     overflow-y: scroll;
   }
 }
