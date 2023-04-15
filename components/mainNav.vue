@@ -68,7 +68,7 @@ nav {
   position: relative;
 
   @media (max-width: 40em) {
-    gap: var(--s0);
+    gap: var(--s-1);
     align-items: center;
   }
 
@@ -76,47 +76,53 @@ nav {
     content: '';
     background-color: var(--primary-color);
     height: 3px;
-    width: 128px;
+    width: 55px;
     position: absolute;
     bottom: -3px;
-    left: -10px;
+    left: 0px;
     transition: all 0.2s ease-out;
     @media (max-width: 40em) {
-      width: 87px;
-      left: -3px;
+      width: 41px;
+      left: 0px;
     }
   }
 }
 
 nav.resources {
   &::before {
-    left: 128px;
+    width: 106px;
+    left: 81px;
   }
   @media (max-width: 40em) {
     &::before {
-      left: 93px;
+      width: 81px;
+      left: 52px;
     }
   }
 }
 
 nav.playbook {
   &::before {
-    left: 263px;
+    width: 97px;
+    left: 213px;
   }
   @media (max-width: 40em) {
     &::before {
-      left: 191px;
+      width: 74px;
+      left: 141px;
     }
   }
 }
 
 nav.map {
   &::before {
-    left: 400px;
+    width: 40px;
+    left: 336px;
   }
   @media (max-width: 40em) {
     &::before {
-      left: 288px;
+      width: 31px;
+      left: 225px;
     }
   }
 }
@@ -129,13 +135,9 @@ li a {
   color: var(--white-color);
   letter-spacing: .4px;
   text-decoration: none;
-  width: 110px;
+  width: auto;
   display: inline-block;
   text-align: center;
-
-  @media (max-width: 40em) {
-    width: 81px;
-  }
 }
 
 a:hover {

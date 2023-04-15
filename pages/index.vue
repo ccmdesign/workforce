@@ -8,7 +8,7 @@
           <div class="intro-section__content panel">
             <stack-l>
               <h2>The College-to-Jobs <strong>Initiative</strong></h2>
-              <p class="tagline">A review of programs and policies that connect college students to high-paying careers</p>
+              <p class="tagline">Examining the connections between higher education and the labor market</p>
             </stack-l>
             <a class="next-link icon" href="#intro-2" @click="changeSlide('intro-2')">arrow_forward</a>
           </div>
@@ -27,7 +27,8 @@
           <div class="intro-section__content panel">
             <stack-l>
               <h3 class="color:primary">Higher education is at an inflection point.</h3>
-              <p>Colleges are being called upon to evaluate—and improve—the economic outcomes of their students, particularly Black, Latinx, and Indigenous students who have been underserved by the higher education system. Higher education institutions must address a key question–are they connecting students to good jobs?</p>
+              <p><strong>Colleges are being called upon to evaluate—and improve—the economic outcomes of their students</strong></p>
+              <p>This is particularly true  for Black, Latinx, and Indigenous students who have been underserved by the higher education system. Institutions and their partners must address a key question–are they connecting students to good jobs?</p>
             </stack-l>
             <a class="prev-link icon" href="#intro-2" @click="changeSlide('intro-2')">arrow_back</a>
             <a class="next-link icon" href="#intro-4" @click="changeSlide('intro-4')">arrow_forward</a>
@@ -66,7 +67,7 @@
         </div>
         <div v-if="stateActiveSlide == 'playbook'" class="slide grid-section" id="playbook">
           <div class="intro-section__content panel">
-            <div class="scroll">
+            <div class="scroll | margin-bottom:s1">
               <stack-l>
                 <h2 class="color:secondary">College-to-Jobs Playbook</h2>
                 <p><strong>For a growing share of learners and workers in the United States, college is failing to live up to its economic mobility promise.</strong> The cost of college is rising, accompanied by mounting student debt, and many graduates are underemployed following college. Students face steep barriers to college enrollment and success, including time demands, access to housing and childcare, and transportation. These conditions have prompted many learners and workers to reconsider whether college is truly worth the expense.</p>
@@ -171,7 +172,7 @@ section {
 #map {
   @media (max-width: 32em) {
     .intro-section__content > .scroll {
-      height: 50vh;
+      max-height: 50vh;
       overflow-y: scroll;
     }
   }
@@ -183,7 +184,7 @@ section {
     @media (min-width: 40em) { transform: translateX(-20%); }
   }
   .intro-section__content > .scroll {
-    height: 50vh;
+    max-height: 50vh;
     overflow-y: scroll;
   }
 }
