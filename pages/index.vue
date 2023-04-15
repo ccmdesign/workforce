@@ -119,6 +119,7 @@ const bg = ref(bgMap[stateActiveSlide.value])
 function changeSlide(slide) {
   stateActiveSlide.value = slide
   bg.value = bgMap[slide]
+  window.scrollByPages('1')
 }
 </script>
 
