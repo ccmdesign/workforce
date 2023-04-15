@@ -45,6 +45,7 @@ footer {
   font-weight: 400;
   font-size: .85rem;
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
 
   a { 
