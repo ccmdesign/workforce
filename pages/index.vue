@@ -152,7 +152,9 @@ section {
   height: 100%;
 }
 
-#intro-1 .intro-section__content { position: relative; }
+#intro-1 .intro-section__content { 
+  position: relative; 
+}
 
 #intro-1 .intro-section__content:after {
   content: '';
@@ -174,7 +176,7 @@ section {
   margin-bottom: 10vh;
 
   @media (min-width: 40em) {
-    max-width: 75%;
+    width: 75%;
     margin-bottom: 10vh;
   }
   .stack {
