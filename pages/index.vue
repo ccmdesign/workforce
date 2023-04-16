@@ -177,6 +177,10 @@ section {
     max-width: 75%;
     margin-bottom: 10vh;
   }
+  .stack {
+    max-height: calc(70vh - var(--s4));
+    overflow-y: auto;
+  }
 }
 
 #map {
@@ -194,8 +198,12 @@ section {
     @media (min-width: 40em) { transform: translateX(-20%); }
   }
   .intro-section__content > .scroll {
-    max-height: 40vh;
+    max-height: calc(70vh - var(--s5));
     overflow-y: scroll;
+  }
+  .stack {
+    max-height: none;
+    overflow-y: hidden;
   }
 }
 </style>
