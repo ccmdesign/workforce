@@ -85,13 +85,15 @@
         </div>
         <div v-if="stateActiveSlide == 'map'" class="slide grid-section" id="map">
           <div class="intro-section__content panel">
-            <div class="scroll">
+            <div class="scroll | margin-bottom:s1">
               <stack-l>
                 <h2 class="color:secondary">College-to-Jobs Map</h2>
                 <p><strong>The College-to-Jobs Map visualizes how local worker trends align with college graduate growth in regions around the country.</strong> The tool allows users to dive into regional labor market changes and discover college graduate and workforce information. The map draws the connection between colleges, economic mobility, and regional economic development–presenting the graduate supply and labor demand challenges to building a prosperous and inclusive workforce.</p>
-                <p><base-button visual="primary" color="primary" el="a" href="https://collegetojobs.hks.harvard.edu/" target="_blank">Explore the Tool</base-button></p>
               </stack-l>
             </div>
+            <stack-l space="var(--s-3)">
+              <p><base-button visual="primary" color="primary" el="a" href="https://collegetojobs.hks.harvard.edu/" target="_blank">Explore the Tool</base-button></p>
+            </stack-l>
             <a href="#" class="prev-link icon" @click.prevent="changeSlide('resources',4)">arrow_back</a>
           </div>
         </div>
@@ -194,6 +196,7 @@ section {
   }
 }
 #playbook,
+#map,
 #resources {
   .intro-section__content {
     max-width: 100%;
