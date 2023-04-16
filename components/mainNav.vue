@@ -1,10 +1,10 @@
 <template>
   <header class="main-nav" :neg="neg">
     <nav class="main-nav__nav" :class="{'resources': stateActiveSlide == 'resources', 'playbook': stateActiveSlide == 'playbook', 'map': stateActiveSlide == 'map'}">
-      <li><a href="/" @click.prevent="openResource('intro-1')">Intro</a></li>
-      <li><a href="#resources" @click.prevent="openResource('resources')">Resources</a></li>
-      <li><a href="#playbook" @click.prevent="openResource('playbook')">Playbook</a></li>
-      <li><a href="#map" @click.prevent="openResource('map')">Map</a></li>
+      <li><a href="#" @click.prevent="openResource('intro-1',0)">Intro</a></li>
+      <li><a href="#" @click.prevent="openResource('resources',4)">Resources</a></li>
+      <li><a href="#" @click.prevent="openResource('playbook',5)">Playbook</a></li>
+      <li><a href="#" @click.prevent="openResource('map',6)">Map</a></li>
     </nav>
       
   </header>
@@ -15,8 +15,14 @@ import { toRefs } from 'vue'
 
 const stateActiveSlide = useActiveSlide()
 
-const openResource = (rsc) => {
-  stateActiveSlide.value = rsc
+const openResource = (rsc, step) => {
+  stateActiveSlide.value = rsc;
+  const slideContainer = document.querySelector('.slides');
+  const width = window.innerWidth;
+  slideContainer.scrollTo({
+    left: (width * step),
+    behavior: 'smooth'
+  });
 }
 
 
