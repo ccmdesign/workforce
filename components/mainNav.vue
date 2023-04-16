@@ -1,10 +1,10 @@
 <template>
   <header class="main-nav" :neg="neg">
     <nav class="main-nav__nav" :class="{'resources': stateActiveSlide == 'resources', 'playbook': stateActiveSlide == 'playbook', 'map': stateActiveSlide == 'map'}">
-      <li><a href="/" @click="openResource('intro-1')">Intro</a></li>
-      <li><a href="#resources" @click="openResource('resources')">Resources</a></li>
-      <li><a href="#playbook" @click="openResource('playbook')">Playbook</a></li>
-      <li><a href="#map" @click="openResource('map')">Map</a></li>
+      <li><a href="/" @click.prevent="openResource('intro-1')">Intro</a></li>
+      <li><a href="#resources" @click.prevent="openResource('resources')">Resources</a></li>
+      <li><a href="#playbook" @click.prevent="openResource('playbook')">Playbook</a></li>
+      <li><a href="#map" @click.prevent="openResource('map')">Map</a></li>
     </nav>
       
   </header>
