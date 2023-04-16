@@ -10,7 +10,7 @@
               <h2>The College-to-Jobs <strong>Initiative</strong></h2>
               <p class="tagline">Examining the connections between higher education and the labor market</p>
             </stack-l>
-            <a class="next-link icon" href="#intro-2" @click="changeSlide('intro-2')">arrow_forward</a>
+            <a class="next-link icon" href="#intro-2" @click.prevent="changeSlide('intro-2')">arrow_forward</a>
           </div>
         </div>
         <div class="slide grid-section" id="intro-2">
@@ -19,8 +19,8 @@
               <h3 class="color:secondary">It’s time to bridge the gap between college and good-paying jobs.</h3>
               <p>For decades, a college degree has been considered the key to unlock economic prosperity in the United States. However, the college earnings premium appears to be declining for the first time in decades, and college graduates are increasingly underemployed. As education costs continue to skyrocket and student debt mounts, Americans are reconsidering whether college is worth the expense.</p>
             </stack-l>
-            <a class="prev-link icon" href="#intro-1" @click="changeSlide('intro-1')">arrow_back</a>
-            <a class="next-link icon" href="#intro-3" @click="changeSlide('intro-3')">arrow_forward</a>
+            <a class="prev-link icon" href="#intro-1" @click.prevent="changeSlide('intro-1')">arrow_back</a>
+            <a class="next-link icon" href="#intro-3" @click.prevent="changeSlide('intro-3')">arrow_forward</a>
           </div>
         </div>
         <div class="slide grid-section" id="intro-3">
@@ -30,8 +30,8 @@
               <p><strong>Colleges are being called upon to evaluate—and improve—the economic outcomes of their students</strong></p>
               <p>This is particularly true  for Black, Latinx, and Indigenous students who have been underserved by the higher education system. Institutions and their partners must address a key question–are they connecting students to good jobs?</p>
             </stack-l>
-            <a class="prev-link icon" href="#intro-2" @click="changeSlide('intro-2')">arrow_back</a>
-            <a class="next-link icon" href="#intro-4" @click="changeSlide('intro-4')">arrow_forward</a>
+            <a class="prev-link icon" href="#intro-2" @click.prevent="changeSlide('intro-2')">arrow_back</a>
+            <a class="next-link icon" href="#intro-4" @click.prevent="changeSlide('intro-4')">arrow_forward</a>
           </div>
         </div>
         <div class="slide grid-section" id="intro-4">
@@ -40,8 +40,8 @@
               <h3 class="color:secondary">The College-to-Jobs Initiative examines the disconnect between college and good jobs</h3>
               <p>With a focus on public two-year colleges, four-year colleges, Historically Black Universities and Colleges, and other Minority Serving Institutions, it explores what we know – and don’t know – about student transitions to the workforce.</p>
             </stack-l>
-            <a class="prev-link icon" href="#intro-3" @click="changeSlide('intro-3')">arrow_back</a>
-            <a class="next-link icon" href="#resources" @click="changeSlide('resources')">arrow_forward</a>
+            <a class="prev-link icon" href="#intro-3" @click.prevent="changeSlide('intro-3')">arrow_back</a>
+            <a class="next-link icon" href="#resources" @click.prevent="changeSlide('resources')">arrow_forward</a>
             
           </div>
         </div>
@@ -53,14 +53,14 @@
               <stack-l>
                 <h3>College-to-Jobs Playbook</h3>
                 <p><strong>The <span>College-to-Jobs Playbook</span> examines programs and policies that connect college students to high-paying careers.</strong> It evaluates the research, implementation, and feasibility of college-to-jobs initiatives to answer a crucial question: what can educators, employers, policymakers, and other stakeholders do to launch college students onto successful career trajectories?</p>
-                <div><base-button visual="primary" color="primary" @click="changeSlide('playbook')">More Information</base-button></div>
+                <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('playbook')">More Information</base-button></div>
               </stack-l>
             </div>
             <div class="panel">
               <stack-l>
                 <h3>College-to-Jobs Map</h3>
                 <p><strong>The <span>College-to-Jobs Map</span> is a data tool that visualizes how local employment trends align with college graduate growth in regions around the country.</strong> Users can dive into regional labor market changes and find information about college graduate and workforce demographics. The Map highlights the connection between college, economic mobility, and regional economic development across the country.</p>
-                <div><base-button visual="primary" color="primary" @click="changeSlide('map')">More Information</base-button></div>
+                <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('map')">More Information</base-button></div>
               </stack-l>
             </div>
           </div>
@@ -80,7 +80,7 @@
               <p><base-button visual="primary" color="primary" el="a" href="/college-to-jobs-playbook.pdf" target="_blank">Download the playbook</base-button></p>
               <p><base-button visual="primary" color="primary" el="a" href="/college-to-jobs-executive-summary.pdf" target="_blank">Download the Executive Summary</base-button></p>
             </stack-l>
-            <a class="prev-link icon" @click="changeSlide('resources')">arrow_back</a>
+            <a class="prev-link icon" @click.prevent="changeSlide('resources')">arrow_back</a>
           </div>
         </div>
         <div v-if="stateActiveSlide == 'map'" class="slide grid-section" id="map">
@@ -92,7 +92,7 @@
                 <p><base-button visual="primary" color="primary" el="a" href="https://collegetojobs.hks.harvard.edu/" target="_blank">Explore the Tool</base-button></p>
               </stack-l>
             </div>
-            <a class="prev-link icon" @click="changeSlide('resources')">arrow_back</a>
+            <a class="prev-link icon" @click.prevent="changeSlide('resources')">arrow_back</a>
           </div>
         </div>
       </div>
