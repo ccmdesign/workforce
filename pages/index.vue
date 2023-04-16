@@ -47,7 +47,7 @@
         </div>
         <div v-if="stateActiveSlide == 'resources'" class="slide grid-section resources" id="resources">
           <div class="intro-section__content resources-content">
-            <h2 class="heading color:secondary">Resources</h2>
+            <!--<h2 class="heading color:secondary">Resources</h2>-->
 
             <div class="panel">
               <stack-l>
