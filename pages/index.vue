@@ -187,6 +187,12 @@ section {
   }
 }
 
+#resources .intro-section__content {
+  @media (min-width: 40em) {
+    width: 100%;
+  }
+}
+
 #map {
   @media (max-width: 40em) {
     .intro-section__content > .scroll {
