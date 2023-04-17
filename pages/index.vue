@@ -26,7 +26,7 @@
         <div class="slide grid-section" id="intro-3">
           <div class="intro-section__content panel">
             <stack-l>
-              <h3 class="color:primary">Colleges are being called upon to evaluate—and improve—the economic outcomes of their students</h3>
+              <h3 class="color:primary">Colleges are being called upon to evaluate—and improve—the economic outcomes of their students.</h3>
               <p>This is particularly true  for Black, Latinx, and Indigenous students who have been underserved by the higher education system. Institutions and their partners must address a key question–are they connecting students to good jobs?</p>
             </stack-l>
             <a class="prev-link icon" href="#" @click.prevent="changeSlide('intro-2',1)">arrow_back</a>
