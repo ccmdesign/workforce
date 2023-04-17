@@ -92,7 +92,7 @@
               </stack-l>
             </div>
             <stack-l space="var(--s-3)">
-              <p><base-button visual="primary" color="primary" el="a" href="https://collegetojobs.hks.harvard.edu/" target="_blank">Explore the Tool</base-button></p>
+              <p><base-button visual="primary" color="primary" el="a" href="https://collegetojobs.hks.harvard.edu/" target="_blank">Explore the map</base-button></p>
             </stack-l>
             <a href="#" class="prev-link icon" @click.prevent="changeSlide('resources',4)">arrow_back</a>
           </div>
