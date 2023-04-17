@@ -42,11 +42,11 @@ const { bg } = toRefs(props)
   background-position: center left;
   transition: opacity 1s;
   transform-origin: left;
-  animation-name: scale;
-  animation-duration: 40s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  // animation-name: scale;
+  // animation-duration: 40s;
+  // animation-timing-function: linear;
+  // animation-direction: alternate;
+  // animation-iteration-count: infinite;
 }
 
 .bg-1 { background-image: url('/images/intro-1.jpg'); }
