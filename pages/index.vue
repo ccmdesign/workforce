@@ -8,7 +8,7 @@
           <div class="intro-section__content panel">
             <stack-l>
               <h2>The College-to-Jobs <strong>Initiative</strong></h2>
-              <p class="tagline">Examining the connections between higher education and the labor market</p>
+              <p class="tagline">Exploring the Intersection of Higher Education and the Workforce</p>
             </stack-l>
             <a class="next-link icon" href="#" @click.prevent="changeSlide('intro-2',1)">arrow_forward</a>
           </div>
@@ -26,7 +26,7 @@
         <div class="slide grid-section" id="intro-3">
           <div class="intro-section__content panel">
             <stack-l>
-              <h3 class="color:primary">Higher education is at an inflection point.</h3>
+              <h3 class="color:primary">Higher education is being called upon to improve the economic outcomes of their students.</h3>
               <p><strong>Colleges are being called upon to evaluate—and improve—the economic outcomes of their students</strong></p>
               <p>This is particularly true  for Black, Latinx, and Indigenous students who have been underserved by the higher education system. Institutions and their partners must address a key question–are they connecting students to good jobs?</p>
             </stack-l>
@@ -37,7 +37,7 @@
         <div class="slide grid-section" id="intro-4">
           <div class="intro-section__content panel">
             <stack-l>
-              <h3 class="color:secondary">The College-to-Jobs Initiative examines the disconnect between college and good jobs</h3>
+              <h3 class="color:secondary">The College-to-Jobs Initiative examines the disconnect between college and good jobs.</h3>
               <p>With a focus on public two-year colleges, four-year colleges, Historically Black Universities and Colleges, and other Minority Serving Institutions, it explores what we know – and don’t know – about student transitions to the workforce.</p>
             </stack-l>
             <a class="prev-link icon" href="#" @click.prevent="changeSlide('intro-3',2)">arrow_back</a>
@@ -52,7 +52,7 @@
             <div class="panel">
               <stack-l>
                 <h3>College-to-Jobs Playbook</h3>
-                <p><strong>The <span>College-to-Jobs Playbook</span> examines programs and policies that connect college students to high-paying careers.</strong> It evaluates the research, implementation, and feasibility of college-to-jobs initiatives to answer a crucial question: what can educators, employers, policymakers, and other stakeholders do to launch college students onto successful career trajectories?</p>
+                <p><strong>The <span>College-to-Jobs Playbook</span> reviews programs and policies that connect college students to high-paying careers.</strong> It evaluates the research, implementation, and feasibility of college-to-jobs initiatives to answer a crucial question: what can educators, employers, policymakers, and other stakeholders do to launch college students onto successful career trajectories?</p>
                 <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('playbook',5)">More Information</base-button></div>
               </stack-l>
             </div>
@@ -69,7 +69,7 @@
           <div class="intro-section__content panel">
             <div class="scroll | margin-bottom:s1">
               <stack-l>
-                <h2 class="color:secondary">College-to-Jobs Playbook</h2>
+                <h2 class="color:secondary">Delivering on the Degree: The College-to-Jobs Playbook</h2>
                 <p><strong>For a growing share of learners and workers in the United States, college is failing to live up to its economic mobility promise.</strong> The cost of college is rising, accompanied by mounting student debt, and many graduates are underemployed following college. Students face steep barriers to college enrollment and success, including time demands, access to housing and childcare, and transportation. These conditions have prompted many learners and workers to reconsider whether college is truly worth the expense.</p>
                 <p><strong>Higher education leaders are facing a moment of reckoning in which they must improve the economic returns of a college education.</strong> However, there is little clarity around which programs and initiatives best improve a student’s earnings and employment later in their career. The dearth of information reflects, at least in part, the lack of attention and resources such programs have received from the majority of post-secondary institutions.</p>
                 <p><strong>This white paper puts “college-to-jobs” programs in focus, making the case that they should be a priority for future policy, investment, and research.</strong> It maps the field of initiatives that smooth transitions for college students to the workforce, identifying 13 “interventions” that have been deployed to improve college students’ economic outcomes.</p>
@@ -152,6 +152,10 @@ section {
   display: flex;
   width: 500vw;
   height: 100%;
+}
+
+.tagline {
+  font-weight: 700;
 }
 
 #intro-1 .intro-section__content { 
