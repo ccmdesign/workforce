@@ -37,7 +37,7 @@
           <div class="intro-section__content panel">
             <stack-l>
               <h3 class="color:secondary">The College-to-Jobs Initiative examines the disconnect between college and good jobs.</h3>
-              <p>With a focus on public two-year colleges, four-year colleges, Historically Black Universities and Colleges, and other Minority Serving Institutions, it explores what we know – and don’t know – about student transitions to the workforce.</p>
+              <p>With a focus on public two-year colleges, four-year colleges, Historically Black Colleges and Universities, and other Minority Serving Institutions, it explores what we know – and don’t know – about student transitions to the workforce.</p>
             </stack-l>
             <a class="prev-link icon" href="#" @click.prevent="changeSlide('intro-3',2)">arrow_back</a>
             <a class="next-link icon" href="#" @click.prevent="changeSlide('resources',4)">arrow_forward</a>
