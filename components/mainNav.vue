@@ -1,10 +1,11 @@
 <template>
   <header class="main-nav" :neg="neg">
-    <nav class="main-nav__nav" :class="{'resources': stateActiveSlide == 'resources', 'playbook': stateActiveSlide == 'playbook', 'map': stateActiveSlide == 'map'}">
+    <nav class="main-nav__nav" :class="{'resources': stateActiveSlide == 'resources', 'playbook': stateActiveSlide == 'playbook', 'map': stateActiveSlide == 'map', 'briefs': stateActiveSlide == 'briefs'}">
       <li><a href="#" @click.prevent="openResource('intro-1',0)">Intro</a></li>
       <li><a href="#" @click.prevent="openResource('resources',4)">Resources</a></li>
       <li><a href="#" @click.prevent="openResource('playbook',5)">Playbook</a></li>
       <li><a href="#" @click.prevent="openResource('map',6)">Map</a></li>
+      <li><a href="#" @click.prevent="openResource('briefs',7)">Briefs</a></li>
     </nav>
       
   </header>
@@ -51,6 +52,10 @@ const menuData = [
   {
     label: 'Map',
     url: '/map'
+  },
+  {
+    label: 'Briefs',
+    url: '/briefs'
   },
 ]
 </script>
@@ -129,6 +134,18 @@ nav.map {
     &::before {
       width: 31px;
       left: 225px;
+    }
+  }
+}
+nav.briefs {
+  &::before {
+    width: 64px;
+    left: 402px;
+  }
+  @media (max-width: 40em) {
+    &::before {
+      width: 49px;
+      left: 265px;
     }
   }
 }

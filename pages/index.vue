@@ -57,6 +57,13 @@
             </div>
             <div class="panel">
               <stack-l>
+                <h3>College-to-Jobs Stakeholder Briefs</h3>
+                <p><strong>The <span>College-to-Jobs Stakeholder Briefs</span> identify high-impact actions that policymakers, educators, and employers can take to improve economic outcomes for college students.</strong> They are organized around six themes: <strong>1.</strong> Strengthening College-Employer Partnerships, <strong>2.</strong> Expanding Equitable Work-based Learning Opportunities, <strong>3.</strong> Redesigning Postsecondary Accountability Measures to Promote Student Success, <strong>4.</strong> Driving Regional Economic Development Through Higher Education, <strong>5.</strong> Modernizing Data Systems for a Connected Education-Workforce Ecosystem, <strong>6.</strong> Preparing Students with the Skills to Navigate the Future of Work.</p>
+                <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('briefs',7)">More Information</base-button></div>
+              </stack-l>
+            </div>
+            <div class="panel">
+              <stack-l>
                 <h3>College-to-Jobs Map</h3>
                 <p><strong>The <span>College-to-Jobs Map</span> is a data tool that visualizes how local employment trends align with college graduate growth in regions around the country.</strong> Users can dive into regional labor market changes and find information about college graduate and workforce demographics. The Map highlights the connection between college, economic mobility, and regional economic development across the country.</p>
                 <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('map',6)">More Information</base-button></div>
@@ -96,6 +103,37 @@
             <a href="#" class="prev-link icon" @click.prevent="changeSlide('resources',4)">arrow_back</a>
           </div>
         </div>
+        <div v-if="stateActiveSlide == 'briefs'" class="slide grid-section" id="briefs">
+          <div class="intro-section__content panel">
+            <div class="scroll | margin-bottom:s1">
+              <stack-l>
+                <h2 class="color:secondary">College-to-Jobs Stakeholder Briefs</h2>
+                <p><strong>Policymakers, educators, and employers each play a crucial role in improving students' economic prospects.</strong> The College-to-Jobs Stakeholder Briefs offer practical recommendations for these stakeholders through a series of six papers, informed by cross-sector expert discussion groups. Each brief focuses on a different theme at the intersection of higher education and the labor market. Together, they outline a vision for an integrated education-workforce system and establish a clear, actionable path to revive the economic promise of college.</p>
+                <ul class="stack">
+                  <li class="brief">
+                    <a href="/workforce-stakeholder-brief-01.pdf" target="_blank"><strong>Stakeholder Brief #1</strong> | Strengthening College-Employer Partnerships</a>
+                  </li>
+                  <li class="brief">
+                    <a href="/workforce-stakeholder-brief-02.pdf" target="_blank"><strong>Stakeholder Brief #2</strong> | Expanding Equitable Work-based Learning Opportunities</a>
+                  </li>
+                  <li class="brief">
+                    <a href="/workforce-stakeholder-brief-03.pdf" target="_blank"><strong>Stakeholder Brief #3</strong> | Redesigning Postsecondary Accountability Measures to Promote Student Success</a>
+                  </li>
+                  <li class="brief">
+                    <a href="#"><strong>Stakeholder Brief #4</strong> | Driving Regional Economic Development Through Higher Education</a>
+                  </li>
+                  <li class="brief">
+                    <a href="#"><strong>Stakeholder Brief #5</strong> | Modernizing Data Systems for a Connected Education-Workforce Ecosystem</a>
+                  </li>
+                  <li class="brief">
+                    <a href="#"><strong>Stakeholder Brief #6</strong> | Preparing Students with the Skills to Navigate the Future of Work</a>
+                  </li>
+                </ul>
+              </stack-l>
+            </div>
+            <a href="#" class="prev-link icon" @click.prevent="changeSlide('resources',4)">arrow_back</a>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -111,7 +149,8 @@ const bgMap = {
   'intro-4': 3,
   resources: 3,
   playbook : 4,
-  map: 5
+  map: 5,
+  briefs: 6
 }
 
 const stateActiveSlide = useActiveSlide()
@@ -218,6 +257,43 @@ section {
   .stack {
     max-height: none;
     overflow-y: hidden;
+  }
+}
+
+.brief {
+  padding: var(--s0);
+  border: 1px solid hsla(var(--base-hsl), .1);
+  position: relative;
+
+  a {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--base-color);
+  }
+
+  strong { 
+    font-weight: 600; 
+    color: var(--primary-color);
+  }
+
+  & a[href="#"] { 
+    opacity: .5; 
+    pointer-events: none;
+    
+
+    &:after {
+      content:"Coming Soon";
+      font-weight: 600;
+      font-style: italic;
+      color: var(--primary-color);
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 0;
+      text-align: right;
+      padding: var(--s0);
+      background: linear-gradient(to right, transparent, white);
+    }
   }
 }
 </style>

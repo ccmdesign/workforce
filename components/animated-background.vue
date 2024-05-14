@@ -5,6 +5,7 @@
     <div class="bg bg-3"></div>
     <div class="bg bg-4"></div>
     <div class="bg bg-5"></div>
+    <div class="bg bg-6"></div>
   </div>
 </template>
 
@@ -52,10 +53,16 @@ const { bg } = toRefs(props)
 .bg-1 { background-image: url('/images/intro-1.jpg'); }
 .bg-2 { background-image: url('/images/intro-2.jpg'); }
 .bg-3 { background-image: url('/images/intro-3.jpg'); }
-.bg-4 { background-image: url('/images/playbook.png'); 
+.bg-4 { 
+  background-image: url('/images/playbook.png'); 
   left: calc(100% - (100vw * 1.1));
 }
 .bg-5 { background-image: url('/images/map.jpg'); }
+
+.bg-6 { 
+  background-image: url('/images/briefs.png'); 
+  left: calc(100% - (100vw * 1.1)); 
+} 
 
 .background-container[bg='1'] {
   .bg-1 { opacity: 1; }
@@ -63,6 +70,7 @@ const { bg } = toRefs(props)
   .bg-3 { opacity: 0; }
   .bg-4 { opacity: 0; }
   .bg-5 { opacity: 0; }
+  .bg-6 { opacity: 0; }
 }
 .background-container[bg='2'] {
   .bg-1 { opacity: 0; }
@@ -70,6 +78,7 @@ const { bg } = toRefs(props)
   .bg-3 { opacity: 0; }
   .bg-4 { opacity: 0; }
   .bg-5 { opacity: 0; }
+  .bg-6 { opacity: 0; }
 }
 .background-container[bg='3'] {
   .bg-1 { opacity: 0; }
@@ -77,6 +86,7 @@ const { bg } = toRefs(props)
   .bg-3 { opacity: 1; }
   .bg-4 { opacity: 0; }
   .bg-5 { opacity: 0; }
+  .bg-6 { opacity: 0; }
 }
 
 .background-container[bg='4'] {
@@ -85,6 +95,7 @@ const { bg } = toRefs(props)
   .bg-3 { opacity: 0; }
   .bg-4 { opacity: 1; }
   .bg-5 { opacity: 0; }
+  .bg-6 { opacity: 0; }
 }
 
 .background-container[bg='5'] {
@@ -93,6 +104,16 @@ const { bg } = toRefs(props)
   .bg-3 { opacity: 0; }
   .bg-4 { opacity: 0; }
   .bg-5 { opacity: 1; }
+  .bg-6 { opacity: 0; }
+}
+
+.background-container[bg='6'] {
+  .bg-1 { opacity: 0; }
+  .bg-2 { opacity: 0; }
+  .bg-3 { opacity: 0; }
+  .bg-4 { opacity: 0; }
+  .bg-5 { opacity: 0; }
+  .bg-6 { opacity: 1; }
 }
 
 @keyframes scale {
