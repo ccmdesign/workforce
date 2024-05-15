@@ -180,9 +180,6 @@ section {
 .slides {
   width: 100vw;
   overflow-x: hidden;
-  /*@media (max-width: 40em) {
-    overflow-x: scroll;
-  }*/
   scroll-behavior: smooth;
   height: 100%;
 }
