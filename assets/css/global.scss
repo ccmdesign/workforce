@@ -1,11 +1,14 @@
 // /* Structure */
 body {
-  @media (max-width: 40em) {
+  --base-padding: var(--s2);
+
+  @media (max-width: 960px), (max-height: 550px)  { 
+    --base-padding: var(--s1);
     --base-font-size: 12px;
     --h2-font-size: 1.2rem;
     --h3-font-size: 1.1rem;
-  }
-  
+
+  } 
 }
 
 .grid-section {
@@ -96,8 +99,7 @@ body {
 
 .panel {
   margin-top: var(--s1);
-  @media (max-width: 40em) { padding: var(--s1); }
-  padding: var(--s2);
+  padding: var(--base-padding);
   
   z-index: 10;
   background-color: hsla(var(--white-hsl), 1);

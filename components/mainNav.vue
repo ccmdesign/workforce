@@ -67,7 +67,7 @@ const menuData = [
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: var(--s2);
+  padding: var(--base-padding);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -78,8 +78,8 @@ nav {
   gap: var(--s1);
   position: relative;
 
-  @media (max-width: 40em) {
-    gap: var(--s-1);
+  @media (max-width: 960px), (max-height: 550px)  {
+    gap: var(--s0);
     align-items: center;
   }
 
@@ -92,8 +92,8 @@ nav {
     bottom: -3px;
     left: 0px;
     transition: all 0.2s ease-out;
-    @media (max-width: 40em) {
-      width: 41px;
+    @media (max-width: 960px), (max-height: 550px)  {
+      width: 44px;
       left: 0px;
     }
   }
@@ -104,10 +104,10 @@ nav.resources {
     width: 106px;
     left: 81px;
   }
-  @media (max-width: 40em) {
+  @media (max-width: 960px), (max-height: 550px)  {
     &::before {
       width: 81px;
-      left: 52px;
+      left: 57px;
     }
   }
 }
@@ -117,10 +117,10 @@ nav.playbook {
     width: 97px;
     left: 213px;
   }
-  @media (max-width: 40em) {
+  @media (max-width: 960px), (max-height: 550px)  {
     &::before {
       width: 74px;
-      left: 141px;
+      left: 155px;
     }
   }
 }
@@ -130,10 +130,10 @@ nav.map {
     width: 40px;
     left: 336px;
   }
-  @media (max-width: 40em) {
+  @media (max-width: 960px), (max-height: 550px)  {
     &::before {
       width: 31px;
-      left: 225px;
+      left: 243px;
     }
   }
 }
@@ -142,10 +142,10 @@ nav.briefs {
     width: 64px;
     left: 402px;
   }
-  @media (max-width: 40em) {
+  @media (max-width: 960px), (max-height: 550px)  {
     &::before {
       width: 49px;
-      left: 265px;
+      left: 289px;
     }
   }
 }

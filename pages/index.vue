@@ -46,28 +46,28 @@
         </div>
         <div v-if="stateActiveSlide == 'resources'" class="slide grid-section resources" id="resources">
           <div class="intro-section__content resources-content">
-            <!--<h2 class="heading color:secondary">Resources</h2>-->
-
-            <div class="panel">
-              <stack-l>
-                <h3>College-to-Jobs Playbook</h3>
-                <p><strong>The <span>College-to-Jobs Playbook</span> reviews programs and policies that connect college students to high-paying careers.</strong> It evaluates the research, implementation, and feasibility of college-to-jobs initiatives to answer a crucial question: what can educators, employers, policymakers, and other stakeholders do to launch college students onto successful career trajectories?</p>
-                <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('playbook',5)">More Information</base-button></div>
-              </stack-l>
-            </div>
-            <div class="panel">
-              <stack-l>
-                <h3>College-to-Jobs Stakeholder Briefs</h3>
-                <p><strong>The <span>College-to-Jobs Stakeholder Briefs</span> identify high-impact actions that policymakers, educators, and employers can take to improve economic outcomes for college students.</strong> They are organized around six themes: <strong>1.</strong> Strengthening College-Employer Partnerships, <strong>2.</strong> Expanding Equitable Work-based Learning Opportunities, <strong>3.</strong> Redesigning Postsecondary Accountability Measures to Promote Student Success, <strong>4.</strong> Driving Regional Economic Development Through Higher Education, <strong>5.</strong> Modernizing Data Systems for a Connected Education-Workforce Ecosystem, <strong>6.</strong> Preparing Students with the Skills to Navigate the Future of Work.</p>
-                <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('briefs',7)">More Information</base-button></div>
-              </stack-l>
-            </div>
-            <div class="panel">
-              <stack-l>
-                <h3>College-to-Jobs Map</h3>
-                <p><strong>The <span>College-to-Jobs Map</span> is a data tool that visualizes how local employment trends align with college graduate growth in regions around the country.</strong> Users can dive into regional labor market changes and find information about college graduate and workforce demographics. The Map highlights the connection between college, economic mobility, and regional economic development across the country.</p>
-                <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('map',6)">More Information</base-button></div>
-              </stack-l>
+            <div>
+              <div class="panel">
+                <stack-l>
+                  <h3>College-to-Jobs Playbook</h3>
+                  <p><strong>The <span>College-to-Jobs Playbook</span> reviews programs and policies that connect college students to high-paying careers.</strong> It evaluates the research, implementation, and feasibility of college-to-jobs initiatives to answer a crucial question: what can educators, employers, policymakers, and other stakeholders do to launch college students onto successful career trajectories?</p>
+                  <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('playbook',5)">More Information</base-button></div>
+                </stack-l>
+              </div>
+              <div class="panel">
+                <stack-l>
+                  <h3>College-to-Jobs Stakeholder Briefs</h3>
+                  <p><strong>The <span>College-to-Jobs Stakeholder Briefs</span> identify high-impact actions that policymakers, educators, and employers can take to improve economic outcomes for college students.</strong> Organized around six key themes, each brief outlines a comprehensive vision for an integrated education-workforce future.</p>
+                  <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('briefs',7)">More Information</base-button></div>
+                </stack-l>
+              </div>
+              <div class="panel">
+                <stack-l>
+                  <h3>College-to-Jobs Map</h3>
+                  <p><strong>The <span>College-to-Jobs Map</span> is a data tool that visualizes how local employment trends align with college graduate growth in regions around the country.</strong> Users can dive into regional labor market changes and find information about college graduate and workforce demographics. The Map highlights the connection between college, economic mobility, and regional economic development across the country.</p>
+                  <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('map',6)">More Information</base-button></div>
+                </stack-l>
+              </div>
             </div>
           </div>
         </div>
@@ -105,11 +105,11 @@
         </div>
         <div v-if="stateActiveSlide == 'briefs'" class="slide grid-section" id="briefs">
           <div class="intro-section__content panel">
-            <div class="scroll | margin-bottom:s1">
               <stack-l>
                 <h2 class="color:secondary">College-to-Jobs Stakeholder Briefs</h2>
-                <p><strong>Policymakers, educators, and employers each play a crucial role in improving students' economic prospects.</strong> The College-to-Jobs Stakeholder Briefs offer practical recommendations for these stakeholders through a series of six papers, informed by cross-sector expert discussion groups. Each brief focuses on a different theme at the intersection of higher education and the labor market. Together, they outline a vision for an integrated education-workforce system and establish a clear, actionable path to revive the economic promise of college.</p>
-                <ul class="stack">
+                <p><strong>Policymakers, educators, and employers each play a crucial role in improving students' economic prospects.</strong> The College-to-Jobs Stakeholder Briefs offer practical recommendations for these stakeholders in a series of six papers. Each brief focuses on a different theme at the intersection of higher education and the labor market. Together, they outline a vision for an integrated education-workforce system and establish path to revive the economic promise of college.</p>
+                <p>Watch expert discussions about <a href="https://www.pw.hks.harvard.edu/post/college-to-jobs-initiative-policy-practice" target="_blank">each theme here.</a></p>
+                <ul class="list">
                   <li class="brief">
                     <a href="/workforce-stakeholder-brief-01.pdf" target="_blank"><strong>Stakeholder Brief #1</strong> | Strengthening College-Employer Partnerships</a>
                   </li>
@@ -130,7 +130,6 @@
                   </li>
                 </ul>
               </stack-l>
-            </div>
             <a href="#" class="prev-link icon" @click.prevent="changeSlide('resources',4)">arrow_back</a>
           </div>
         </div>
@@ -227,13 +226,21 @@ section {
 }
 
 #resources .intro-section__content {
+  
+  margin: 10svh auto;
+
+  .panel {
+    overflow-y: auto;
+  }
+  
+  
   @media (min-width: 40em) {
     width: 100%;
   }
 }
 
 #map {
-  @media (max-width: 40em) {
+  @media (max-width: 960px), (max-height: 550px)  {
     .intro-section__content > .scroll {
       max-height: 50vh;
       overflow-y: scroll;
@@ -257,13 +264,26 @@ section {
   }
 }
 
+#briefs {
+  .panel {
+    
+  }
+
+  .list > * + *  {
+    margin-top: var(--s-1);
+  }
+}
+
+
+
+
 .brief {
   padding: var(--s0);
   border: 1px solid hsla(var(--base-hsl), .1);
   position: relative;
 
   a {
-    font-size: 1rem;
+    // font-size: 1rem;
     font-weight: 300;
     color: var(--base-color);
   }

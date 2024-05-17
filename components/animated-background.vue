@@ -27,7 +27,7 @@ const { bg } = toRefs(props)
 .background-container {
   position: absolute;
   z-index: -1;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow: hidden;
 }
@@ -60,8 +60,9 @@ const { bg } = toRefs(props)
 .bg-5 { background-image: url('/images/map.jpg'); }
 
 .bg-6 { 
-  background-image: url('/images/briefs.png'); 
-  left: calc(100% - (100vw * 1.1)); 
+  background-image: url('/images/briefs.jpg'); 
+  // left: calc(100% - (100vw * 1.1));
+  background-position: top left; 
 } 
 
 .background-container[bg='1'] {

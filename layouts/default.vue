@@ -36,17 +36,21 @@ article {
 
 footer {
   grid-area: footer;
-  // background-color: yellow;
   flex: 0;
   width: 100vw;
   padding: var(--s0) var(--s2);
   background-color: var(--tertiary-color);
   color: var(--white-color);
   font-weight: 400;
-  font-size: .85rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  font-size: .85rem;
+
+  @media (max-width: 960px), (max-height: 550px)  { 
+    padding: var(--s-3) var(--s1); 
+    font-size: .7rem;
+  }
 
   a { 
     opacity: .4;
