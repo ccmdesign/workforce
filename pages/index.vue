@@ -46,7 +46,7 @@
         </div>
         <div v-if="stateActiveSlide == 'resources'" class="slide grid-section resources" id="resources">
           <div class="intro-section__content resources-content">
-            <div>
+            <perfect-scrollbar>
               <div class="panel">
                 <stack-l>
                   <h3>College-to-Jobs Playbook</h3>
@@ -68,7 +68,7 @@
                   <div><base-button visual="primary" color="primary" @click.prevent="changeSlide('briefs',7)">More Information</base-button></div>
                 </stack-l>
               </div>
-            </div>
+            </perfect-scrollbar>
           </div>
         </div>
         <div v-if="stateActiveSlide == 'playbook'" class="slide grid-section" id="playbook">
@@ -141,6 +141,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import 'vue3-perfect-scrollbar/style.css';
 const bgMap = {
   'intro-1': 1,
   'intro-2': 1,

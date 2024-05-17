@@ -163,11 +163,18 @@ section {
 }
 
 .resources-content {
-  height: 800px;
-  overflow-y: scroll;
   justify-content: flex-start;
 
   @media (max-width: 40em) {
     p { display: none;}
   }
 }
+
+.ps {
+  height: calc(100vh - 270px);
+  padding-right: var(--s0);
+}
+
+  .ps__thumb-y {
+    background: var(--white-color);
+  }
