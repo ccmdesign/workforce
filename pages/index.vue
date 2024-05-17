@@ -107,7 +107,7 @@
           <div class="intro-section__content panel">
               <stack-l>
                 <h2 class="color:secondary">College-to-Jobs Stakeholder Briefs</h2>
-                <p><strong>Policymakers, educators, and employers each play a crucial role in improving students' economic prospects.</strong> The College-to-Jobs Stakeholder Briefs offer practical recommendations for these stakeholders in a series of six papers. Each brief focuses on a different theme at the intersection of higher education and the labor market. Together, they outline a vision for an integrated education-workforce system and establish path to revive the economic promise of college.</p>
+                <p><strong>Policymakers, educators, and employers each play a crucial role in improving students' economic prospects.</strong> The College-to-Jobs Stakeholder Briefs offer practical recommendations for these actors in a series of six papers. Each brief focuses on a different theme at the intersection of higher education and the labor market. Together, they outline a vision for an integrated education-workforce system and establish a path to revive the economic promise of college.</p>
                 <p>Watch expert discussions about <a href="https://www.pw.hks.harvard.edu/post/college-to-jobs-initiative-policy-practice" target="_blank">each theme here.</a></p>
                 <ul class="list">
                   <li class="brief">
