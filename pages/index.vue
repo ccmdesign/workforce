@@ -123,7 +123,7 @@
                     <a href="#"><strong>Stakeholder Brief #4</strong> | Driving Regional Economic Development Through Higher Education</a>
                   </li>
                   <li class="brief">
-                    <a href="#"><strong>Stakeholder Brief #5</strong> | Modernizing Data Systems for a Connected Education-Workforce Ecosystem</a>
+                    <a href="#"><strong>Stakeholder Brief #5</strong> | Modernizing and Leveraging Education-Workforce Data Systems</a>
                   </li>
                   <li class="brief">
                     <a href="#"><strong>Stakeholder Brief #6</strong> | Preparing Students with the Skills to Navigate the Future of Work</a>
