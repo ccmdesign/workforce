@@ -120,13 +120,13 @@
                     <a href="/workforce-stakeholder-brief-03.pdf" target="_blank"><strong>Stakeholder Brief #3</strong> | Redesigning Postsecondary Accountability Measures to Promote Student Success</a>
                   </li>
                   <li class="brief">
-                    <a href="#"><strong>Stakeholder Brief #4</strong> | Driving Regional Economic Development Through Higher Education</a>
+                    <a href="/workforce-stakeholder-brief-04.pdf" target="_blank"><strong>Stakeholder Brief #4</strong> | Driving Regional Economic Development Through Higher Education</a>
                   </li>
                   <li class="brief">
-                    <a href="#"><strong>Stakeholder Brief #5</strong> | Modernizing and Leveraging Education-Workforce Data Systems</a>
+                    <a href="/workforce-stakeholder-brief-05.pdf" target="_blank"><strong>Stakeholder Brief #5</strong> | Modernizing and Leveraging Education-Workforce Data Systems</a>
                   </li>
                   <li class="brief">
-                    <a href="#"><strong>Stakeholder Brief #6</strong> | Preparing Students with the Skills to Navigate the Future of Work</a>
+                    <a href="/workforce-stakeholder-brief-06.pdf" target="_blank"><strong>Stakeholder Brief #6</strong> | Preparing Students with the Skills to Navigate the Future of Work</a>
                   </li>
                 </ul>
               </stack-l>
